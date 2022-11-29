@@ -9,7 +9,7 @@ import cors from "cors";
 import { config } from "dotenv";
 config();
 import * as path from "path";
-const hostName = "rssnews.heroku.com";
+const hostName = "127.0.0.1";
 const port = !_.isEmpty(process.env.PORT) ? Number(process.env.PORT) : 8080;
 const siteURL = `https://${hostName}:${port}`;
 const server = express();
