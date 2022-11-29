@@ -1,0 +1,16 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "importHelpers": false,
+        "allowSyntheticDefaultImports": true,
+        "target": "ESNext",
+        "lib": [
+          "ESNext"
+        ]
+    }
+}

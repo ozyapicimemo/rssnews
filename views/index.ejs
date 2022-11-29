@@ -1,0 +1,10 @@
+<%-$;%>
+<rss status="ok" country="<%-country;%>" count="<%-articles.length;%>">
+    <%for(const article of articles){%>
+        <article src="<%-article.url;%>">
+            <title><%-article.title;%></title>
+            <description><%-article.description;%></description>
+            <img src="<%-article.urlToImage;%>"/>
+        </article>
+    <%}%>
+</rss>
