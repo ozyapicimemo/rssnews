@@ -10,9 +10,9 @@ import {config} from "dotenv";
 config();
 import * as path from "path";
 
-const hostName = "127.0.0.1";
+const hostName = "rssnews.heroku.com";
 const port = _.isInteger(process.env.PORT)? Number(process.env.PORT): 8080;
-const siteURL = `http://${hostName}:${port}`;
+const siteURL = `https://${hostName}:${port}`;
 const server = express();
 
 function declareXML(version: string = "1.0",encoding: BufferEncoding = "utf-8"){
