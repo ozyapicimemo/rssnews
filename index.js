@@ -10,7 +10,7 @@ import { config } from "dotenv";
 config();
 import * as path from "path";
 const hostName = "127.0.0.1";
-const port = !_.isEmpty(process.env.PORT) ? Number(process.env.PORT) : 8080;
+const port = (process.env.PORT || 8080);
 const siteURL = `https://${hostName}:${port}`;
 const server = express();
 function declareXML(version = "1.0", encoding = "utf-8") {
