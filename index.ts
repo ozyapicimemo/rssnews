@@ -11,7 +11,7 @@ config();
 import * as path from "path";
 
 const hostName = "127.0.0.1";
-const port = !_.isEmpty(process.env.PORT)? Number(process.env.PORT): 8080;
+const port = (process.env.PORT || 8080) as number;
 const siteURL = `https://${hostName}:${port}`;
 const server = express();
 
