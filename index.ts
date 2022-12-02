@@ -12,7 +12,7 @@ import * as path from "path";
 
 const hostName = "127.0.0.1";
 const port = (process.env.PORT || 8080) as number;
-const siteURL = `https://${hostName}:${port}`;
+const siteURL = `http://${hostName}:${port}`;
 const server = express();
 
 function declareXML(version: string = "1.0",encoding: BufferEncoding = "utf-8"){

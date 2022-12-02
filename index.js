@@ -11,7 +11,7 @@ config();
 import * as path from "path";
 const hostName = "127.0.0.1";
 const port = (process.env.PORT || 8080);
-const siteURL = `https://${hostName}:${port}`;
+const siteURL = `http://${hostName}:${port}`;
 const server = express();
 function declareXML(version = "1.0", encoding = "utf-8") {
     return `<?xml version="${version}" encoding="${encoding}"?>`;
